@@ -1,0 +1,34 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: jumping-monster
+  name: jumping-monster
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: jumping-monster
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: jumping-monster
+    spec:
+      containers:
+      - image: snaruto7/jumping-monster:v1
+        imagePullPolicy: IfNotPresent
+        name: jumping-monster
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
