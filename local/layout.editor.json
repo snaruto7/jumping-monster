@@ -1,0 +1,96 @@
+{
+  "version": "1.1.1",
+  "windows": {
+    "main": {
+      "main": true,
+      "url": "app://editor/index.html",
+      "windowType": "dockable",
+      "x": -8,
+      "y": -8,
+      "width": 1552,
+      "height": 840,
+      "layout": {
+        "children": [
+          {
+            "children": [
+              {
+                "active": 0,
+                "children": [
+                  "hierarchy"
+                ],
+                "height": 360.1000061035156,
+                "type": "panel",
+                "width": 314.6000061035156
+              },
+              {
+                "active": 0,
+                "children": [
+                  "assets"
+                ],
+                "height": 361.1000061035156,
+                "type": "panel",
+                "width": 314.6000061035156
+              }
+            ],
+            "height": 724.2000122070312,
+            "type": "dock-v",
+            "width": 314.6000061035156
+          },
+          {
+            "active": 0,
+            "children": [
+              "scene"
+            ],
+            "height": 724.2000122070312,
+            "type": "panel",
+            "width": 748.4375
+          },
+          {
+            "active": 0,
+            "children": [
+              "inspector",
+              "cocos-services"
+            ],
+            "height": 724.2000122070312,
+            "type": "panel",
+            "width": 469.3625183105469
+          }
+        ],
+        "type": "dock-h"
+      },
+      "panels": [
+        "hierarchy",
+        "assets",
+        "scene",
+        "inspector",
+        "cocos-services"
+      ]
+    },
+    "worker": {},
+    "window-1588483831732": {}
+  },
+  "panels": {
+    "preferences": {
+      "x": 476,
+      "y": 128,
+      "width": 603,
+      "height": 567
+    },
+    "console": {
+      "x": 556,
+      "y": 228,
+      "width": 422,
+      "height": 340
+    },
+    "builder": {
+      "x": 508,
+      "y": 28,
+      "width": 671,
+      "height": 740
+    }
+  },
+  "panelLabelWidth": {
+    "builder": null
+  },
+  "panelLabelWidth.builder": null
+}
