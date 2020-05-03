@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": -8,
-      "y": -8,
-      "width": 1552,
-      "height": 840,
+      "x": 128,
+      "y": 52,
+      "width": 1280,
+      "height": 720,
       "layout": {
         "children": [
           {
@@ -18,32 +18,32 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 360.1000061035156,
+                "height": 300.1875,
                 "type": "panel",
-                "width": 314.6000061035156
+                "width": 258.1625061035156
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 361.1000061035156,
+                "height": 301.01251220703125,
                 "type": "panel",
-                "width": 314.6000061035156
+                "width": 258.1625061035156
               }
             ],
-            "height": 724.2000122070312,
+            "height": 604.2000122070312,
             "type": "dock-v",
-            "width": 314.6000061035156
+            "width": 258.1625061035156
           },
           {
             "active": 0,
             "children": [
               "scene"
             ],
-            "height": 724.2000122070312,
+            "height": 604.2000122070312,
             "type": "panel",
-            "width": 748.4375
+            "width": 615.8125
           },
           {
             "active": 0,
@@ -51,9 +51,9 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 724.2000122070312,
+            "height": 604.2000122070312,
             "type": "panel",
-            "width": 469.3625183105469
+            "width": 386.4250183105469
           }
         ],
         "type": "dock-h"
@@ -65,9 +65,7 @@
         "inspector",
         "cocos-services"
       ]
-    },
-    "worker": {},
-    "window-1588483831732": {}
+    }
   },
   "panels": {
     "preferences": {
@@ -85,8 +83,14 @@
     "builder": {
       "x": 508,
       "y": 28,
-      "width": 671,
+      "width": 672,
       "height": 740
+    },
+    "project-settings": {
+      "x": 476,
+      "y": 128,
+      "width": 603,
+      "height": 567
     }
   },
   "panelLabelWidth": {
