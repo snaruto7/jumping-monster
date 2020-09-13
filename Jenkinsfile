@@ -12,7 +12,7 @@ pipeline {
     agent { label 'master'}
     environment{
         version = VersionNumber([versionNumberString: '${BUILD_YEAR}.${BUILD_MONTH}.${BUILD_DAY}.JUMPING-MONSTER.${BUILDS_ALL_TIME}', projectStartDate: '2020-04-01'])
-        codeRepo = "https://github.com/snaruto7/minesweeper.git"
+        codeRepo = "https://github.com/snaruto7/jumping-monster.git"
         branch = "master"
         imageName = "jumping-monster"
         registry = "kubepractice.azurecr.io"
