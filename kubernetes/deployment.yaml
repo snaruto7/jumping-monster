@@ -21,14 +21,8 @@ spec:
         app: jumping-monster
     spec:
       containers:
-      - image: snaruto7/jumping-monster:v1
+      - image: #{REGISTRY_URL}#/#{IMAGE_NAME}#:#{BUILD_ID}#
         imagePullPolicy: IfNotPresent
         name: jumping-monster
-        resources: {}
-        terminationMessagePath: /dev/termination-log
-        terminationMessagePolicy: File
-      dnsPolicy: ClusterFirst
-      restartPolicy: Always
-      schedulerName: default-scheduler
-      securityContext: {}
-      terminationGracePeriodSeconds: 30
+      imagePullSecrets:
+      - name: docker-secret
