@@ -21,6 +21,8 @@ spec:
         app: jumping-monster
     spec:
       containers:
-      - image: snaruto7/jumping-monster:v1
+      - image: #{REGISTRY_URL}#/#{IMAGE_NAME}#:#{BUILD_ID}#
         imagePullPolicy: IfNotPresent
         name: jumping-monster
+      imagePullSecrets:
+      - name: docker-secret
